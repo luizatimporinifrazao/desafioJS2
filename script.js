@@ -40,5 +40,9 @@ console.log(soma)
 let tarefas = []
 tarefas.push("Desenhar")
 tarefas.push("estudar")
-tarefas.push("jogar rpg")
-console.log(tarefas)
+tarefas.push("limpar a casa")
+console.table("lista:")
+
+tarefas.forEach((tarefas, index) => {
+  console.log(`${index + 1}. ${tarefas}`);
+});
